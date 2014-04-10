@@ -1,9 +1,11 @@
 var config = require('./config/nconf'),
+    blockchain = require('./lib/blockchain_listener.js'),
     gateway = require('ripple-gateway'),
-    blockchainListener = require('./lib/blockchain_listener.js'),
-    mailer = require('./lib/mailer.js'),
-    pollHotWalletBalance = require('./lib/poll_hot_wallet_balance.js');
+    hotWallet = require('./lib/poll_hot_wallet_balance.js');
 
-blockchainListener.listen();
+blockchain.listen(function(transaction){
+    //pass to Steven's deposit process
+    console.log('PASS THIS OBJECT TO DEPOSITS PROCESS', transaction);
+});
 
-//pollHotWalletBalance();
+hotWallet.listen();
