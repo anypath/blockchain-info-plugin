@@ -5,11 +5,11 @@ var config = require('./config/nconf'),
     hotWallet = require('./lib/poll_hot_wallet_balance');
 
 blockchain.listen(function(btc){
-    //pass to Steven's deposit process
 
     depositProcessor.start(btc, function(transaction){
-        console.log('PASS THIS OBJECT TO DEPOSITS PROCESS', transaction);
+        console.log('PASS THIS OBJECT TO DEPOSIT PROCESS', transaction);
     });
 
 });
+
 hotWallet.listen();
