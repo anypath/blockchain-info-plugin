@@ -7,7 +7,7 @@ var config = require('./config/nconf'),
 blockchain.listen(function(btc){
 
     depositProcessor.start(btc, function(transaction){
-        console.log('PASS THIS OBJECT TO DEPOSIT PROCESS', transaction);
+        gateway.deposits.record(transaction, console.log);
     });
 
 });
