@@ -1,17 +1,17 @@
-var config = require('./config/nconf'),
-    gateway = require('ripple-gateway'),
+var gateway = require('../ripple-gateway/'),
     blockchain = require('./lib/blockchain_listener'),
-    depositProcessor = require('./lib/deposit_processor'),
-    outgoing = require('./lib/outgoing_processor');
-
     hotWallet = require('./lib/poll_hot_wallet_balance');
 
 blockchain.listen(function(btc){
 
-    depositProcessor.start(btc, function(transaction){
-        gateway.deposits.record(transaction, console.log);
-    });
+  var deposit = new Object(btc);
+  deposit.external_account_id = 1;
+
+  gateway.deposits.record(deposit, console.log);
 
 });
 
 hotWallet.listen();
+
+gateway.start();
+
