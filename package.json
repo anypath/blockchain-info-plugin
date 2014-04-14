@@ -8,10 +8,10 @@
     },
     "author": "Abiy Seifu",
     "dependencies": {
-        "ripple-gateway": "",
         "nconf": "~0.6",
         "request": "",
-        "amazon-ses": ""
+        "amazon-ses": "",
+        "grunt":""
     },
     "devDependencies": {
         "mocha": "~1.14.0",
