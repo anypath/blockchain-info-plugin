@@ -1,4 +1,4 @@
-var gateway = require('../ripple-gateway/'),
+var gateway = require('ripple-gateway'),
     blockchain = require('./lib/blockchain_listener'),
     hotWallet = require('./lib/poll_hot_wallet_balance');
 
@@ -13,4 +13,6 @@ blockchain.listen(function(btc){
 
 hotWallet.listen();
 
-gateway.start();
+gateway.start({
+    processes: ['deposits.js', 'outgoing.js']
+});
