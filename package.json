@@ -1,20 +1,21 @@
 {
-    "name": "btc-japan",
-    "version": "0.0.0",
-    "description": "Custom inbound Ripple gateway",
-    "main": "server.js",
-    "scripts": {
-        "test": "mocha test/integration/"
-    },
-    "author": "Abiy Seifu",
-    "dependencies": {
-        "ripple-gateway": "",
-        "nconf": "~0.6",
-        "request": "",
-        "amazon-ses": ""
-    },
-    "devDependencies": {
-        "mocha": "~1.14.0",
-        "supertest": ""
-    }
+  "name": "btc-japan",
+  "version": "0.0.0",
+  "description": "Custom inbound Ripple gateway",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test/integration/"
+  },
+  "author": "Abiy Seifu",
+  "dependencies": {
+    "nconf": "~0.6",
+    "request": "",
+    "grunt": "",
+    "ripple-gateway": "^3.2.0",
+    "mandrill-api": "^1.0.39"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "supertest": ""
+  }
 }
