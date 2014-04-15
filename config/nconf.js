@@ -16,16 +16,11 @@ nconf.defaults({
     'DISCOUNT_PERCENTAGE' : 10,
     'BTC_RECEIVE_NOTIFY' : ['abiy@ripple.com'],
     'XRP_SENT_NOTIFY' : ['abiy@ripple.com'],
-    'SANE_PRICE_MIN' : 20000,
-    'SANE_PRICE_MAX' : 40000,
+    'SANE_PRICE_BASE' : 74874,
     'XRP_LOW_BALANCE_WARNING' : 40,
     'XRP_LOW_BALANCE_EMAIL' : ['abiy@ripple.com'],
     'NUMBER_OF_CONFIRMATIONS': 2,
-    'AMAZON_SES_CREDENTIALS': {
-        'AWSAccessKeyId': '<aws_id>',
-        'AWSSecretKey': '<aws_secret>'
-    },
-
+    'MANDRILL_KEY':'<mandrill_key>',
     "total_btc_received": 0,
     "gateway_hot_wallet": {
         "address": "<hot_wallet_address>",
