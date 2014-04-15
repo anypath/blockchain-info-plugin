@@ -12,7 +12,7 @@ nconf.defaults({
     'EXCHANGE_ISSUER_ADDRESS' : 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B',
     'BLOCKCHAIN_API_KEY': '<blockchain_api_key>',
     'USER_ID' : 1,
-    'POLLING_FREQUENCY': 10000,
+    'POLLING_FREQUENCY': 60000,
     'DISCOUNT_PERCENTAGE' : 10,
     'BTC_RECEIVE_NOTIFY' : ['abiy@ripple.com'],
     'XRP_SENT_NOTIFY' : ['abiy@ripple.com'],
