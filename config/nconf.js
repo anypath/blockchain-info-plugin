@@ -6,8 +6,8 @@ nconf
     .env();
 
 nconf.defaults({
-    'RIPPLE_REST_API': 'http://localhost:5990',
-    'RIPPLE_CHARTS_API': 'http://RippleChartsStagingAPI-869095469.us-east-1.elb.amazonaws.com/api/exchangerates',
+    'RIPPLE_REST_API': 'http://localhost:5990/',
+    'RIPPLE_CHARTS_API': 'http://api.ripplecharts.com/api/exchangerates',
     'BTC_INBOUND' : '<bitcoin_wallet_address>',
     'EXCHANGE_ISSUER_ADDRESS' : 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B',
     'BLOCKCHAIN_API_KEY': '<blockchain_api_key>',
