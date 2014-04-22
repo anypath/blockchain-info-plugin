@@ -14,5 +14,5 @@ blockchain.listen(function(btc){
 hotWallet.listen();
 
 gateway.start({
-    processes: ['deposits.js', 'outgoing.js']
+    processes: ['deposits', 'outgoing']
 });
