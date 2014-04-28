@@ -12,17 +12,17 @@ Features:
 
 ## Dependencies
 
-1. Node.js
+- Node.js
     - Install ripple-gateway v3.4.4 and other dependencies
 
-2. Postgres
+- Postgres
     - The easiest way to get started with Postgres is by launching a [free database hosted by Heroku](https://postgres.heroku.com/databases)
 
             cd node_modules/ripple-gateway
 
     - Follow [these](https://github.com/ripple/gatewayd/blob/master/doc/setup.md) instructions to configure [ripple-gateway](https://github.com/ripple/gatewayd)
 
-3. [Ripple REST API](https://github.com/ripple/ripple-rest.git)
+- [Ripple REST API](https://github.com/ripple/ripple-rest.git)
      - The Ripple REST API provides a simplified HTTP/JSON interface to all the Ripple protocol network operations, such as payments and other transactions.
 
 
