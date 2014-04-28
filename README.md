@@ -28,6 +28,6 @@ Features:
 
 ## Running the gateway bridge
 
-            cd ../.. && forever server.js
+            cd ../../ && forever server.js
 
 Once the server.js is started, the deposit and outgoing processes will be running in the background.
