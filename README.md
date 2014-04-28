@@ -5,10 +5,10 @@ It listens to the blockchain and converts BTC to XRP upon two confirmations of t
 The application relies on the [Ripple Gateway](https://github.com/ripple/gatewayd) and [Ripple REST API](https://github.com/ripple/ripple-rest.git).
 
 Features:
-    - Polls the specified wallet every minute via Blockchain.info's REST API
-    - Monitors Ripple hot wallet for balance via the Ripple REST API
-    - Upon transaction, application will send out an email notification with amount and effective exchange rate
-    - This light weight Node.js app is fully configurable
+- Polls the specified wallet every minute via Blockchain.info's REST API
+- Monitors Ripple hot wallet for balance via the Ripple REST API
+- Upon transaction, application will send out an email notification with amount and effective exchange rate
+- This light weight Node.js app is fully configurable
 
 ## Dependencies
 
@@ -30,4 +30,4 @@ Features:
 
             cd .. && forever server.js
 
-Once the server.js is started, the deposit and outgoing process will be running in the background.
+Once the server.js is started, the deposit and outgoing processes will be running in the background.
