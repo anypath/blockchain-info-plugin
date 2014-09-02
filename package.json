@@ -1,6 +1,6 @@
 {
   "name": "btc-japan",
-  "version": "0.0.0",
+  "version": "1.2.0",
   "description": "Custom inbound Ripple gateway",
   "main": "server.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "nconf": "~0.6",
     "request": "",
     "grunt": "",
-    "ripple-gateway": "^3.2.0",
+    "ripple-gateway": "^3.24.1",
     "mandrill-api": "^1.0.39"
   },
   "devDependencies": {

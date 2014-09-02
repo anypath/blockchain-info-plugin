@@ -11,7 +11,7 @@ describe('Call ripple charts API', function(){
             assert(body.length >= 1);
             assert(body[0].hasOwnProperty('base'));
             assert.equal(body[0]['base']['currency'], 'BTC');
-            assert.equal(body[0]['trade']['currency'], 'XRP');
+            assert.equal(body[0]['counter']['currency'], 'XRP');
             done();
         });
     });
