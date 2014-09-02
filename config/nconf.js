@@ -9,7 +9,7 @@ nconf.defaults({
     'RIPPLE_REST_API': 'http://localhost:5990/',
     'RIPPLE_CHARTS_API': 'http://api.ripplecharts.com/api/exchange_rates',
     'BTC_INBOUND' : '<bitcoin_wallet_address>',
-    'EXCHANGE_ISSUER_ADDRESS' : '<exchange_issuer_wallet_address>',
+    'EXCHANGE_ISSUER_ADDRESS' : 'rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B', // ~BitStamp
     'BLOCKCHAIN_API_KEY': '<blockchain_api_key>',
     'USER_ID' : 1, // external account ID
     'POLLING_FREQUENCY': 60000,
