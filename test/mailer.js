@@ -7,7 +7,7 @@ describe('Email notification', function(){
         it('\ntest email should go out, should return sent', function(done) {
             this.timeout(20000);
             mailer.sendEmail({
-                to: ['abiy@ripple.com'],
+                to: ['CHANGE@ME.com'],
                 subject: 'UNIT TEST EMAIL',
                 body: 'UNIT TEST BODY'
             }, function(result){
