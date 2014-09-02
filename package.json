@@ -11,7 +11,7 @@
     "nconf": "~0.6",
     "request": "",
     "grunt": "",
-    "ripple-gateway": "^3.4.3",
+    "ripple-gateway": "^3.24.1",
     "mandrill-api": "^1.0.39"
   },
   "devDependencies": {
