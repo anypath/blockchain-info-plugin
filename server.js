@@ -8,12 +8,12 @@ blockchain.listen(function(btc){
     var deposit = new Object(btc);
     deposit.external_account_id = config.get('USER_ID');
 
-    gateway.deposits.record(deposit, console.log);
+    gateway.api.recordDeposit(deposit, console.log);
 
 });
 
 hotWallet.listen();
 
-gateway.start({
+gateway.api.startGateway({
     processes: ['deposits', 'outgoing']
 });
